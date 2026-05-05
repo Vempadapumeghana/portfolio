@@ -1,88 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meghana V | Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio - Metro Flow Prediction</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="portfolio-container">
+        <header>
+            <h1>Technical Portfolio</h1>
+        </header>
 
-  <nav class="navbar">
-    <div class="container flex-nav">
-      <div class="logo">M<span>.</span></div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact" class="btn-cta">Contact</a></li>
-      </ul>
+        <section class="project-card">
+            <div class="project-header">
+                <h2>Citywide OD Passenger Flow Prediction</h2>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Smart City</span>
+            </div>
+            
+            <div class="project-content">
+                <h3>Objective</h3>
+                <p>Accurately predict citywide Origin-Destination (OD) flow on sparse metro networks using an Adaptive Feature Fusion Network (AFFN).</p>
+
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li><strong>Backend:</strong> Python, Anaconda, Jupyter Notebook</li>
+                    <li><strong>Frontend:</strong> Flask, HTML5, CSS3, JavaScript, Bootstrap4</li>
+                    <li><strong>Database:</strong> Sqlite3</li>
+                    <li><strong>Architecture:</strong> EMGC-GRU, Multi-Task Learning</li>
+                </ul>
+
+                <h3>System Analysis</h3>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Existing System</th>
+                        <th>Proposed AFFN System</th>
+                    </tr>
+                    <tr>
+                        <td>Method</td>
+                        <td>Survey Campaigns / Manual Estimation</td>
+                        <td>Enhanced Multi-Graph Convolution (EMGC-GRU)</td>
+                    </tr>
+                    <tr>
+                        <td>Efficiency</td>
+                        <td>Time-consuming and manual</td>
+                        <td>High-speed automated prediction</td>
+                    </tr>
+                    <tr>
+                        <td>Accuracy</td>
+                        <td>Low due to static data</td>
+                        <td>High due to spatial-temporal fusion</td>
+                    </tr>
+                </table>
+
+                <h3>Implementation Modules</h3>
+                <div class="modules">
+                    <div class="module-item">Data Pre-processing (80/20 Split)</div>
+                    <div class="module-item">Feature Fusion Modeling</div>
+                    <div class="module-item">Multi-Task Training</div>
+                    <div class="module-item">Performance Evaluation</div>
+                </div>
+            </div>
+        </section>
     </div>
-  </nav>
-
-  <header class="hero">
-    <div class="container">
-      <span class="badge">ECE Engineer & Python Developer</span>
-      <h1>Vempadapu <span class="accent-text">Meghana</span></h1>
-      <p>I build hardware intelligence and software automation. Expert in Circuit Design, PLC Systems, and Python-driven logic.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">View Work</a>
-        <a href="https://www.linkedin.com/in/vempadapu-meghana-535722313" class="btn-secondary">LinkedIn</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="section" id="skills">
-    <div class="container">
-      <h2 class="section-title">Technical Arsenal</h2>
-      <div class="bento-grid">
-        <div class="bento-card large">
-          <h3>Programming & Logic</h3>
-          <div class="tag-cloud">
-            <span>Python</span><span>C</span><span>VHDL</span><span>Verilog</span><span>Flask</span>
-          </div>
-        </div>
-        <div class="bento-card">
-          <h3>Hardware</h3>
-          <p>Xilinx, Vivado, Arduino, Matlab, Keil</p>
-        </div>
-        <div class="bento-card">
-          <h3>Automation</h3>
-          <p>PLC Programming, HMI Config, MODBUS</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="project-list">
-        <div class="project-item">
-          <div class="project-content">
-            <h4>Accident Prevention System</h4>
-            <p>Smart road safety model using IR sensors, Transistor voltage regulators, and speed breaker power generation.</p>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-content">
-            <h4>Industrial Automation (CEMS)</h4>
-            <p>Ladder logic simulation for motor control and conveyor systems with real-time HMI monitoring.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact">
-    <div class="container footer-box">
-      <h2>Let's collaborate.</h2>
-      <p>vempadapumeghana08@gmail.com</p>
-      <p class="phone">9866561687</p>
-    </div>
-  </footer>
-
 </body>
 </html>
